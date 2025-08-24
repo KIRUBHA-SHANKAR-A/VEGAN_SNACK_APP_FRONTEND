@@ -48,7 +48,7 @@ const ApproveSnacks = () => {
         throw new Error('Authentication required. Please login again.');
       }
 
-      const response = await fetch('http://localhost:8080/admin/snacks', {
+      const response = await fetch('https://springapp-production.up.railway.app/admin/snacks', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ const ApproveSnacks = () => {
         throw new Error('Authentication required. Please login again.');
       }
 
-      const response = await fetch(`http://localhost:8080/admin/snack/approve/${snackId}`, {
+      const response = await fetch(`https://springapp-production.up.railway.app/admin/snack/approve/${snackId}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -132,7 +132,7 @@ const ApproveSnacks = () => {
         throw new Error('Authentication required. Please login again.');
       }
 
-      const response = await fetch(`http://localhost:8080/admin/snack/reject/${snackId}`, {
+      const response = await fetch(`https://springapp-production.up.railway.app/admin/snack/reject/${snackId}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
