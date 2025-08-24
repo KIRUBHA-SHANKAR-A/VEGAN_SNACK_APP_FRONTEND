@@ -1,5 +1,5 @@
 // api.js
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'https://springapp-production.up.railway.app';
 
 // Generic API call function
 async function apiCall(endpoint, options = {}) {
