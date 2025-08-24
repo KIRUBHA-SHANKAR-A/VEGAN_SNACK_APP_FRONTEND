@@ -16,7 +16,7 @@ const SnackInventoryManager = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // API base URL - replace with your actual backend URL
-  const API_BASE_URL = 'http://localhost:8080';
+  const API_BASE_URL = 'https://springapp-production.up.railway.app';
 
   // Get JWT token from localStorage
   const getAuthToken = () => {
