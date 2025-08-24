@@ -41,7 +41,7 @@ const CreateProductManager = () => {
         throw new Error('Authentication required. Please login again.');
       }
 
-      const response = await fetch('http://localhost:8080/admin/create-product-manager', {
+      const response = await fetch('https://springapp-production.up.railway.app/admin/create-product-manager', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
