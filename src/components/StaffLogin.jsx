@@ -26,7 +26,7 @@ const StaffLogin = () => {
     setLoading(true);
     setError('');
 
-    fetch('https://springapp-production.up.railway.app/auth/staff/login', {
+    fetch('https://vegansnackappbackend-production.up.railway.app/auth/staff/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
