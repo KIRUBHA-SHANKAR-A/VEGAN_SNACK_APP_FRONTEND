@@ -48,7 +48,7 @@ const ApproveVendors = () => {
         throw new Error('Authentication required. Please login again.');
       }
 
-      const response = await fetch('https://springapp-production.up.railway.app/admin/vendors', {
+      const response = await fetch('https://vegansnackappbackend-production.up.railway.app/admin/vendors', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ const ApproveVendors = () => {
         throw new Error('Authentication required. Please login again.');
       }
 
-      const response = await fetch(`https://springapp-production.up.railway.app/admin/vendor/approve/${vendorId}`, {
+      const response = await fetch(`https://vegansnackappbackend-production.up.railway.app/admin/vendor/approve/${vendorId}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -132,7 +132,7 @@ const ApproveVendors = () => {
         throw new Error('Authentication required. Please login again.');
       }
 
-      const response = await fetch(`https://springapp-production.up.railway.app/admin/vendor/reject/${vendorId}`, {
+      const response = await fetch(`https://vegansnackappbackend-production.up.railway.app/admin/vendor/reject/${vendorId}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
