@@ -109,7 +109,7 @@ const [form, setForm] = useState({
           vendorId: vendorId,
         };
 
-        const res = await fetch('https://springapp-production.up.railway.app/snacks', {
+        const res = await fetch('https://vegansnackappbackend-production.up.railway.app/snacks', {
           method: 'POST',
           headers: { 
             'Content-Type': 'application/json',
