@@ -49,7 +49,7 @@ const DisplayVeganSnacks = () => {
       }
 
       // Fetch approved products
-      const response = await fetch('https://springapp-production.up.railway.app/snacks/approved', {
+      const response = await fetch('https://vegansnackappbackend-production.up.railway.app/snacks/approved', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
